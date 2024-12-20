@@ -25,7 +25,8 @@ body {
 #cursor {
   height: 7.5vw;
   width: 7.5vw;
-  background-color: #ff5f38;
+  background-color: #0000007c;
+  color: #fff;
   border-radius: 50%;
   position: fixed;
   z-index: 9;
@@ -79,6 +80,8 @@ nav h4 {
 }
 #page1-content h1 span {
   font-family: rejoy;
+  display: inline-block;
+  cursor: default;
 }
 #page2 {
   height: 100vh;
@@ -178,4 +181,35 @@ nav h4 {
   height: 60vh;
   width: 100%;
   background-color: red;
+  position: relative;
+}
+
+#loader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #000;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  gap: 10px;
+}
+#loader h3 {
+  font-size: 2vw;
+}
+#loader h3 sup {
+  font-size: small;
+}
+
+#height {
+  font-size: 20vw;
+  font-weight: bold;
+}
+
+#page1-content h1 {
+  position: relative;
+  bottom: -55px;
 }
